@@ -1,4 +1,7 @@
 import SectionMessage from '@atlaskit/section-message';
+import Spinner from '@atlaskit/spinner';
+import Toggle from '@atlaskit/toggle';
+import { Label } from './label';
 import React from 'react';
 
 export default function HelloWorld() {
@@ -18,8 +21,15 @@ export default function HelloWorld() {
         }
       ]}
     >
+
+      <>
+        <Label htmlFor="toggle-default">Allow pull requests</Label>
+        <Toggle id="toggle-default" />
+      </>
+
       <p>
         Congratulations! You have successfully created an Atlassian Connect app using the <a href={'https://bitbucket.org/atlassian/atlassian-connect-express'}>atlassian-connect-express</a> client library.
       </p>
+      <Spinner size={xsmall}/>
     </SectionMessage>;
 }
