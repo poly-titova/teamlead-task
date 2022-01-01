@@ -2,7 +2,7 @@
     "key": "my-app",
     "name": "My app",
     "description": "My very first app",
-    "baseUrl": "https://97f6-62-148-157-163.ngrok.io",
+    "baseUrl": "{{localBaseUrl}}",
     "authentication": {
         "type": "jwt"
     },
@@ -18,23 +18,23 @@
     "modules": {
         "generalPages": [
             {
-                "key": "hello-world-page-jira",
+                "key": "teamlead-task-page-jira",
                 "location": "system.top.navigation.bar",
                 "name": {
-                    "value": "Hello World"
+                    "value": "Teamlead Task"
                 },
-                "url": "/hello-world",
+                "url": "/teamlead-task",
                 "conditions": [{
                     "condition": "user_is_logged_in"
                 }]
             },
             {
-                "key": "hello-world-page-confluence",
+                "key": "teamlead-task-page-confluence",
                 "location": "system.header/left",
                 "name": {
-                    "value": "Hello World"
+                    "value": "Teamlead Task"
                 },
-                "url": "/hello-world",
+                "url": "/teamlead-task",
                 "conditions": [{
                     "condition": "user_is_logged_in"
                 }]

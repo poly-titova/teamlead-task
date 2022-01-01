@@ -6,6 +6,7 @@
     "development": {
         // Port the Express server will listen on.
         "port": 3000,
+        "localBaseUrl": "https://5be3-62-148-157-230.ngrok.io",
         // Use views/unauthorized.hbs for error page.
         "errorTemplate": true,
         // atlassian-connect-express currently integrates with Sequelize for
@@ -59,7 +60,7 @@
         // Use views/unauthorized.hbs for error page.
         "errorTemplate": true,
         // Public URL to production app.
-        "localBaseUrl": "https://97f6-62-148-157-163.ngrok.io",
+        "localBaseUrl": "https://5be3-62-148-157-230.ngrok.io",
         "store": {
             // Don't use memory storage for production, otherwise
             // data in the storage will go away when the app server restarts.
